@@ -29,7 +29,7 @@ setUp();
 async function ContractDeploy(res, walletNumber, passWallet){
   owner = walletNumber;
   const contract = new web3.eth.Contract(abi);
-  let balanceOf = await web3.eth.getBalance(walletNumber);
+
   try{
     await web3.eth.personal.unlockAccount(walletNumber, passWallet);
     contract.deploy({data:'0x' + bin})
@@ -61,9 +61,9 @@ async function TransferToContract(res, addrParty, passParty, value){
 
     try{
       //check balance address who conducts the transaction
-      let balanceOf = await web3.eth.getBalance(addrParty);
+      await web3.eth.getBalance(addrParty);
   
-      await web3.eth.personal.unlockAccount(addrParty, passParty, 10000);
+      await web3.eth.personal.unlockAccount(addrParty, passParty);
       await contract.methods.TransferEtherContract()
         .send({
           from: addrParty,
@@ -157,7 +157,7 @@ async function changeLot(contract){
 async function restart(res, password){
   let contract = new web3.eth.Contract(abi, addressContract);
   try{
-    await web3.eth.personal.unlockAccount(owner, password, 10000);
+    await web3.eth.personal.unlockAccount(owner, password);
     contract.methods.restartLottery().send({
       from:owner,
       gas:1000000
