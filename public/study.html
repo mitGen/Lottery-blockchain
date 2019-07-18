@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset='UTF-8'/>
+    <title>Lottery</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+  </head>
+  <body>
+      <img src="../pictures/test.jpg" class = "res">
+    <div id="timer">
+      <div></div>
+      <div>:</div>
+      <div></div>
+      <div>:</div>
+      <div></div>
+      <div>:</div>
+      <div></div>
+    </div>
+    <div id = "active"></div>
+    <div id ="balanceOf">0 ETH</div>
+    <table class = "mainPlay">
+      <tr>
+        <td>
+          <label for="wallet">Address wallet</label></br>
+          <input type="text" placeholder = 'Input wallet' id = 'wallet'>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="passowrd">Password</label></br>
+          <input type="password" placeholder = 'Passowrd' id = 'password'>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="valEth">Count ETH</label></br>
+          <input type="text" placeholder = 'Input value ether' id = 'valEth'>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button id = "butTransfer">Send</button>
+        </td>
+      </tr>
+    </table>
+    <div id = "errorValid"></div>
+    <div id = 'but'>
+      <div id = 'information'></div>
+      <button id = "lotteryInfo">Lottery Info</button>
+      <button id = "membersInfo">Members Info</button>
+      <button id = "membersInactive">Members Inactive</button>
+      <button id = "winner">Winner</button>
+    </div>
+    <div id = 'closed'>
+        <img src="../pictures/close.png" id = "close"></img>
+    </div>
+    <div id = "restart">
+        <button id = "rest">Restart</button>
+        <input type="password" placeholder="Enter password for restart" id = 'passwordOwner'>
+    </div>
+    
+    <script src = '../js/transfer.js' async></script>
+    <!-- <script src = '../js/informPay.js' async></script> -->
+  </body>
+</html>

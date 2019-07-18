@@ -1,0 +1,17 @@
+{
+  "name": "tasksol",
+  "version": "1.0.0",
+  "description": "lottery",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "gennady",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "solc": "^0.4.25",
+    "web3": "^1.0.0-beta.34"
+  }
+}

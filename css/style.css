@@ -1,0 +1,198 @@
+#one{
+  color: red;
+}
+#wallet, #password, #valEth{
+  background-color: #e3e3e3;
+  width:500px;
+  height:50px;
+  font-size:20px;
+  border-radius:10px;
+}
+#sub, #butTransfer{
+  width:200px;
+  height:50px;
+  font-size:20px;
+  margin:0px auto;
+  border-radius: 10px;
+  background-color: #17c200;
+  font-weight: bold;
+  color:#e3e3e3;
+}
+#sendVal{
+  margin-left: 0px auto;
+}
+#timer{
+  width:440px;
+  min-height:40px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index:100;
+  position: relative;
+  margin:0px auto;
+  padding-top: 20px;
+}
+#timer >div:nth-child(2n+1){
+  width:100px;
+  height:80px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 60px;
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+  color:white;
+}
+#timer p{
+  font-size: 25px;
+  margin-top:0px;
+}
+#timer >div:nth-child(2n){
+  width:30px;
+  height:80px;
+  display:flex;
+  justify-content: center;
+  /* align-items: center; */
+  font-size: 60px;
+  font-weight: 900;
+  margin-top: -10px;
+  color: white;
+}
+.main{
+  width:510px;
+  margin:0px auto;
+  position: relative;
+  padding-top:250px;
+}
+label{
+  font-size:20px;
+  font-weight:bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color:#fce1e1;
+}
+.res{
+  width:100%;
+  height:101%;
+  position: fixed;
+}
+.mainPlay{
+  position: relative;
+  margin:0px auto;
+  margin-top: 145px;
+}
+.mainPlay label{
+  color:white;
+}
+.mainPlay td{
+  padding-top:10px;
+}
+#errorValid{
+  width:500px;
+  min-height:40px;
+  position: relative;
+  margin:0px auto;
+  margin-top:20px;
+  /* background-color: orange; */
+  border-radius:10px;
+  color:white;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#active{
+  width:860px;
+  height:90px;
+  margin:0px auto;
+  margin-top:30px;
+  font-size: 35px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  color:greenyellow;
+}
+#balanceOf{
+  width:300px;
+  min-height:50px;
+  position:relative;
+  margin-left:83%;
+  margin-top:-10%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 60px;
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+  color:white;
+}
+#but{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+#lotteryInfo, #membersInfo, #membersInactive, #winner{
+  background-color: #b0b0b0;
+  margin-left:15px;
+  width:200px; 
+  height:50px;
+  left:25%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  border-radius:10px;
+}
+#lotteryInfo:hover, #membersInfo:hover, #membersInactive:hover, #winner:hover{
+  background-color: aqua;
+}
+#information{
+  display:none;
+  position: absolute;
+  width:400px;
+  height:380px;
+  top: -430px;
+  text-align: center;
+  color:white;
+  background-color:#747678;
+  border-radius: 15px;  
+  font-size:15px;
+  overflow: auto;
+}
+#information p{
+  color:white;
+}
+#close{
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  margin-left: 419px;
+  margin-top: -418px;
+  opacity: 0.8;
+  z-index: 2;
+  display: none;
+  margin-left: 180px;
+  margin-top: -505px;
+}
+#close:hover{
+  opacity:2;
+}
+#closed{
+  position: relative;
+  width: 20px;
+  height:40px;
+  margin:0px auto;
+}
+#restart{
+  position: relative;
+  width:230px;
+  height:30px;
+  text-align: center;
+  margin:0px auto;
+}
+#rest{
+  width:100px;
+  height:40px;
+  border-radius:10px;
+}
+#passwordOwner{
+  width:200px;
+  height:50px;
+}
